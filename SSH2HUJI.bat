@@ -16,12 +16,13 @@ echo:
 echo ------------------------------------------------------------------------
 echo:
 echo:
+
+
 :start
 set /p user=[%me%] Enter CSE username:
 ssh -CXJ %user%@bava.cs.huji.ac.il %user%@river
 IF %ERRORLEVEL% NEQ 0 (
   echo&cls
-  echo %ERRORLEVEL%
 	echo [%me%] make sure there are no other termials open and try again
 	echo [%me%] if this is still a problem:
   echo [%me%] go to "C:\Users\%USERNAME%\.ssh\known_hosts"
@@ -31,6 +32,8 @@ IF %ERRORLEVEL% NEQ 0 (
 ) else (
   goto exit
 )
+
+
 :choise
 IF %choise%==1 (
     echo&cls
@@ -43,5 +46,7 @@ IF %choise%==2 (
   echo&cls
   goto start
 )
+
+
 :exit
 pause
