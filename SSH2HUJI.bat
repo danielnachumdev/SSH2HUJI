@@ -16,13 +16,32 @@ echo:
 echo ------------------------------------------------------------------------
 echo:
 echo:
-set /p username=[%me%] Enter CSE username:
-ssh -CXJ %username%@bava.cs.huji.ac.il %username%@river
+:start
+set /p user=[%me%] Enter CSE username:
+ssh -CXJ %user%@bava.cs.huji.ac.il %user%@river
 IF %ERRORLEVEL% NEQ 0 (
-echo&cls
+  echo&cls
+  echo %ERRORLEVEL%
 	echo [%me%] make sure there are no other termials open and try again
 	echo [%me%] if this is still a problem:
-  echo [%me%] go to "c://users/<your user>/.ssh/known_hosts"
+  echo [%me%] go to "C:\Users\%USERNAME%\.ssh\known_hosts"
   echo [%me%] and delete the entry about bava.cs.huji.ac.il
-  pause
+  set /p choise=What would you like to do? [1] try again [2] reset [3] exit: 
+  goto choise
+) else (
+  goto exit
 )
+:choise
+IF %choise%==1 (
+    echo&cls
+    goto start
+)
+IF %choise%==2 (
+  echo [%me%] preforming reset...
+  del C:\Users\%USERNAME%\.ssh\known_hosts
+  pause
+  echo&cls
+  goto start
+)
+:exit
+pause
