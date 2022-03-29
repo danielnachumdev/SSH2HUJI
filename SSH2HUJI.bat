@@ -3,7 +3,7 @@ SETLOCAL ENABLEEXTENSIONS
 
 
 :version
-set current_version=1
+set current_version=1.01
 set version_file=tmp
 echo Cheking version number...
 curl --silent --output %version_file% https://raw.githubusercontent.com/danielnachumdev/SSH2HUJI/main/version
@@ -11,11 +11,14 @@ set count=0
 FOR /F "tokens=1" %%x IN (%version_file%) DO (
     if %count%==0 ( rem this is to check the version if this is a bat file
         if %current_version% LSS %%x (
-            echo %%x is the latest version and you have %current_version%
+            echo LATEST VERSION=%%x
+            echo CURRENT_VERSION=%current_version%
             echo go to https://github.com/danielnachumdev/SSH2HUJI to download the latest version
             del tmp
             goto exit
         ) else (
+          echo good to go!
+          del tmp
           goto start
             @REM echo You have the latest version! good to go..
         )
@@ -27,24 +30,24 @@ FOR /F "tokens=1" %%x IN (%version_file%) DO (
 
 :start
 SET me=%~n0
-rem echo cd ../../course/current/<course>/presubmit/<ex>/io
-echo -----------------------------HOW TO USE--------------------------------------
-echo:                             
-echo if this is your first time using this then it will ask you something like this two times, say yes on both:
-echo:
-echo The authenticity of host 'bava.cs.huji.ac.il (132.65.128.9)' can't be established.
-echo ED25519 key fingerprint is SHA256:**************************************.
-echo Are you sure you want to continue connecting (yes/no/[fingerprint])?
-echo:
-echo:
-echo  to finish the ssh write "logout" in the terminal
-echo:
-echo ------------------------------------------------------------------------
-echo:
-echo:
+@REM rem echo cd ../../course/current/<course>/presubmit/<ex>/io
+@REM echo -----------------------------HOW TO USE--------------------------------------
+@REM echo:                             
+@REM echo if this is your first time using this then it will ask you something like this two times, say yes on both:
+@REM echo:
+@REM echo The authenticity of host 'bava.cs.huji.ac.il (132.65.128.9)' can't be established.
+@REM echo ED25519 key fingerprint is SHA256:**************************************.
+@REM echo Are you sure you want to continue connecting (yes/no/[fingerprint])?
+@REM echo:
+@REM echo:
+@REM echo  to finish the ssh write "logout" in the terminal
+@REM echo:
+@REM echo ------------------------------------------------------------------------
+@REM echo:
+@REM echo:
 
 
-:start
+:login
 set /p user=[%me%] Enter CSE username:
 ssh -CXJ %user%@bava.cs.huji.ac.il %user%@river
 IF %ERRORLEVEL% NEQ 0 (
@@ -63,7 +66,7 @@ IF %ERRORLEVEL% NEQ 0 (
 :choise
 IF %choise%==1 (
     echo&cls
-    goto start
+    goto login
 )
 IF %choise%==2 (
   echo:
@@ -71,7 +74,7 @@ IF %choise%==2 (
   del C:\Users\%USERNAME%\.ssh\known_hosts
   pause
   echo&cls
-  goto start
+  goto login
 )
 
 
