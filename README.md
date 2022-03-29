@@ -7,8 +7,7 @@ download the file and run it (its not a virus you can look at the code yourself.
 # SSH2HUJI
 This program will simplify the procces of connecting remotly to the computers of the "aquarium" using ssh
 ## How to use
- 1. download
-	You need to download the correct program for your OS:
+ 1. You need to download the correct program for your OS:
 	* for **windows**  download **SSH2HUJI.bat** 
 	* for unix operatin systems such as **macOS** or **linux** dowmload **TBD**
  2. allow to run
