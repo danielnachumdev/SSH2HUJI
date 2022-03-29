@@ -6,24 +6,23 @@ SETLOCAL ENABLEEXTENSIONS
 set current_version=1
 set version_file=tmp
 echo Cheking version number...
-curl --output %version_file% https://raw.githubusercontent.com/danielnachumdev/SSH2HUJI/main/version
-
-
-
+curl --silent --output %version_file% https://raw.githubusercontent.com/danielnachumdev/SSH2HUJI/main/version
 set count=0
 FOR /F "tokens=1" %%x IN (%version_file%) DO (
     if %count%==0 ( rem this is to check the version if this is a bat file
         if %current_version% LSS %%x (
             echo %%x is the latest version and you have %current_version%
+            echo go to https://github.com/danielnachumdev/SSH2HUJI to download the latest version
+            del tmp
             goto exit
-        )
-        else (
+        ) else (
           goto start
             @REM echo You have the latest version! good to go..
         )
     )
     set %count%=%count%+1
 )
+
 
 
 :start
