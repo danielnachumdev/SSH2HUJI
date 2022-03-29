@@ -1,4 +1,5 @@
 @echo off
+echo VERSION_NUMBER=0.9.5
 SETLOCAL ENABLEEXTENSIONS
 SET me=%~n0
 rem echo cd ../../course/current/<course>/presubmit/<ex>/io

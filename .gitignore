@@ -1,3 +1,5 @@
 *.txt
-test.bat
+test*
+known_hosts
 p.py
+*.ps1
