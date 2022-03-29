@@ -1,6 +1,32 @@
 @echo off
-echo VERSION_NUMBER=0.9.5
 SETLOCAL ENABLEEXTENSIONS
+
+
+:version
+set current_version=1
+set version_file=tmp
+echo Cheking version number...
+curl --output %version_file% https://raw.githubusercontent.com/danielnachumdev/SSH2HUJI/main/version
+
+
+
+set count=0
+FOR /F "tokens=1" %%x IN (%version_file%) DO (
+    if %count%==0 ( rem this is to check the version if this is a bat file
+        if %current_version% LSS %%x (
+            echo %%x is the latest version and you have %current_version%
+            goto exit
+        )
+        else (
+          goto start
+            @REM echo You have the latest version! good to go..
+        )
+    )
+    set %count%=%count%+1
+)
+
+
+:start
 SET me=%~n0
 rem echo cd ../../course/current/<course>/presubmit/<ex>/io
 echo -----------------------------HOW TO USE--------------------------------------
@@ -41,6 +67,7 @@ IF %choise%==1 (
     goto start
 )
 IF %choise%==2 (
+  echo:
   echo [%me%] preforming reset...
   del C:\Users\%USERNAME%\.ssh\known_hosts
   pause
