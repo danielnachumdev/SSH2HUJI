@@ -1,5 +1,5 @@
 ### TL;DR
-windows -> [direct download](https://drive.google.com/uc?id=12kMNzA0ni-ZPmY90-o7Ewi08WHFqAkS7&export=download) | [download from google drive](https://drive.google.com/file/d/12kMNzA0ni-ZPmY90-o7Ewi08WHFqAkS7/view?usp=sharing)
+windows -> [direct download](https://drive.google.com/uc?id=1x2F25rBsdzZXNBQRiolBkhj9No7LnEuJ&export=download) | [download from google drive](https://drive.google.com/file/d/1x2F25rBsdzZXNBQRiolBkhj9No7LnEuJ/view?usp=sharing)
 mac->TDB
 
 download the file and run it (its not a virus you can look at the code yourself..) and thats it! :)
@@ -9,7 +9,7 @@ This program will simplify the procces of connecting remotly to the computers of
 ## How to use
  1. download
 	You need to download the correct program for your OS:
-	* for **windows**  download SSH2HUJI.bat from [direct download](https://drive.google.com/uc?id=12kMNzA0ni-ZPmY90-o7Ewi08WHFqAkS7&export=download) | [download from google drive](https://drive.google.com/file/d/12kMNzA0ni-ZPmY90-o7Ewi08WHFqAkS7/view?usp=sharing)
+	* for **windows**  download SSH2HUJI.bat from [direct download](https://drive.google.com/uc?id=1x2F25rBsdzZXNBQRiolBkhj9No7LnEuJ&export=download) | [download from google drive](https://drive.google.com/file/d/1x2F25rBsdzZXNBQRiolBkhj9No7LnEuJ/view?usp=sharing)
 	* for unix operatin systems such as **macOS** or **linux** dowmload **TBD**
  2. allow to run
 * **windows** won't recognize the file as it is not from a [verified publisher](https://docs.microsoft.com/en-us/azure/active-directory/develop/publisher-verification-overview) and will block it automatically, which means that [this](https://drive.google.com/file/d/1HjxKAkaky2p2qsgMe5aruNKIXg48kuzA/view?usp=sharing) screen will show. After clicking as instructed in the photo [this](https://drive.google.com/file/d/166RVmMn9wJhNPSsLN2bpM3AYZpIuEbxJ/view?usp=sharing) screen will show. Same as before, click as shown in the photo.
