@@ -3,7 +3,7 @@ SET me=%~n0
 
 
 :update
-set current_version=1.05
+set current_version=1.06
 set version_file=tmp
 echo [%me%] Cheking version number...
 curl --silent --output %version_file% https://raw.githubusercontent.com/danielnachumdev/SSH2HUJI/main/version
@@ -14,11 +14,11 @@ FOR /F "tokens=1" %%x IN (%version_file%) DO (
             echo [%me%] LATEST VERSION=%%x
             echo [%me%] CURRENT_VERSION=%current_version%
             echo [%me%] go to https://github.com/danielnachumdev/SSH2HUJI to download the latest version
-            del tmp
+            del %version_file%
             goto exit
         ) else (
           echo [%me%] good to go!
-          del tmp
+          del %version_file%
           goto login
         )
     )
