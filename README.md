@@ -1,8 +1,8 @@
 If you have found this helpfull please consider giving a star to this repo.
 
 ### TL;DR
-windows -> [direct download](https://drive.google.com/uc?id=1x2F25rBsdzZXNBQRiolBkhj9No7LnEuJ&export=download) | [download from google drive](https://drive.google.com/file/d/1x2F25rBsdzZXNBQRiolBkhj9No7LnEuJ/view?usp=sharing)
-mac->TDB
+* windows -> [direct download](https://drive.google.com/uc?id=1x2F25rBsdzZXNBQRiolBkhj9No7LnEuJ&export=download) | [download from google drive](https://drive.google.com/file/d/1x2F25rBsdzZXNBQRiolBkhj9No7LnEuJ/view?usp=sharing)
+* mac->TDB
 
 download the file and run it (its not a virus you can look at the code yourself..) and thats it! :)
 
