@@ -13,7 +13,7 @@ This program will simplify the process of connecting remotely to the computers o
 	You need to download the correct program for your OS:
 	* for **windows**  download SSH2HUJI.bat the [latest release](https://github.com/danielnachumdev/SSH2HUJI/releases/latest)
 	* for unix operation systems such as **macOS** or **linux** download **TBD**
- 2. Extract zip and delete all files except SSH@HUJI.bat
+ 2. Extract zip and delete all files except SSH2HUJI.bat
  3. Put the file at your desired location and double-click to run
  4. Allow to run
 * **windows** won't recognize the file as it is not from a [verified publisher](https://docs.microsoft.com/en-us/azure/active-directory/develop/publisher-verification-overview) and will block it automatically, which means that [this](https://drive.google.com/file/d/1HjxKAkaky2p2qsgMe5aruNKIXg48kuzA/view?usp=sharing) screen will show. After clicking as instructed in the photo [this](https://drive.google.com/file/d/166RVmMn9wJhNPSsLN2bpM3AYZpIuEbxJ/view?usp=sharing) screen will show. Same as before, click as shown in the photo.
