@@ -3,7 +3,7 @@ SET me=%~n0
 
 
 :update
-set current_version=1.07
+set current_version=1.08
 set version_file=tmp
 echo [%me%] Cheking version number...
 curl --silent --output %version_file% https://raw.githubusercontent.com/danielnachumdev/SSH2HUJI/main/version
