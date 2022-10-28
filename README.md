@@ -1,7 +1,7 @@
 If you have found this helpful please consider giving a star to this repo.
 
 ### TL;DR
-* windows -> [direct download](https://drive.google.com/uc?id=1hkBqrLU2-eAzgEorxvu-8pvpuCb0CfZi&export=download) | [download from google drive](https://drive.google.com/file/d/1hkBqrLU2-eAzgEorxvu-8pvpuCb0CfZi/view?usp=sharing)
+* windows -> [latest release](https://github.com/danielnachumdev/SSH2HUJI/releases/latest)
 * mac->TDB
 
 download the file and run it (its not a virus you can look at the code yourself..) and thats it! :)
