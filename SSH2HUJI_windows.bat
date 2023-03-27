@@ -1,6 +1,14 @@
 @echo off
-SET me="SSH2HUJI"
+SET me=SSH2HUJI
+where curl >nul 2>&1 || (
+    echo curl is not installed. Please install it and try again.
+    exit /b 1
+)
 
+where ssh >nul 2>&1 || (
+    echo ssh is not installed. Please install it and try again.
+    exit /b 1
+)
 
 :update
 set current_version=1.08
