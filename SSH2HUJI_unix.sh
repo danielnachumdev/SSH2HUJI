@@ -12,7 +12,7 @@ if ! which ssh >/dev/null; then
 fi
 
 # Check version
-current_version=1.08
+current_version=1.10
 version_file=tmp
 echo "[$me] Checking version number..."
 curl --silent --output "$version_file" https://raw.githubusercontent.com/danielnachumdev/SSH2HUJI/main/version
