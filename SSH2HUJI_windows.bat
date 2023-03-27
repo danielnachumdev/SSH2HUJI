@@ -1,5 +1,5 @@
 @echo off
-SET me=%~n0
+SET me="SSH2HUJI"
 
 
 :update
