@@ -3,7 +3,7 @@ If you have found this helpful please consider giving a star to this repo.
 ### TL;DR
 * download here -> [latest release](https://github.com/danielnachumdev/SSH2HUJI/releases/latest)
 * run correct script based on machine type
-* follow instructions about how to use the program bellow
+* follow instructions about how to use the program below
 
 download the file and run it (its not a virus you can look at the code yourself..) and thats it! :)
 
