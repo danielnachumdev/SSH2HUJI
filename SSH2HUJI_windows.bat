@@ -11,7 +11,7 @@ where ssh >nul 2>&1 || (
 )
 
 :update
-set current_version=1.11
+set current_version=1.12
 set version_file=tmp
 echo [%me%] Cheking version number...
 curl --silent --output %version_file% https://raw.githubusercontent.com/danielnachumdev/SSH2HUJI/main/version
@@ -31,7 +31,7 @@ FOR /F "tokens=1" %%x IN (%version_file%) DO (
     set /a count=%count%+1
 )
 
-set known_hosts = "C:\Users\%USERNAME%\.ssh\known_hosts"
+set known_hosts="C:\Users\%USERNAME%\.ssh\known_hosts"
 set look_for="bava.cs.huji.ac.il"
 :login
 @REM does known_hosts already contains path?
