@@ -1,7 +1,7 @@
 name: CI
 
 # Thin orchestrator. Prefer requiring checks "CI / CI" and "Semver / Semver".
-# Pin @v1 for the stable major contract.
+# Pin @latest for the floating release tag.
 
 on:
   push:
@@ -22,13 +22,13 @@ permissions:
 jobs:
   ci:
     name: CI
-    uses: danielnachumdev/actions/.github/workflows/ci.yml@v1
+    uses: danielnachumdev/actions/.github/workflows/ci.yml@latest
     with:
       allow-empty: true
 
   semver:
     name: Semver
     if: github.event_name == 'pull_request'
-    uses: danielnachumdev/actions/.github/workflows/semver-ci.yml@v1
+    uses: danielnachumdev/actions/.github/workflows/semver-ci.yml@latest
     with:
       standards-ref: v1
